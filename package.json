@@ -1,23 +1,22 @@
 {
-  "name": "bookify",
+  "name": "project1",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit1",
-    "build": "npm run dev",
-    "start": "node index.js"
+    "dev": "nodemon src/app.js -e js,hbs"
+    ,"build":"npm run build"
+    ,"start":"node index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^5.1.0",
     "bcryptjs": "^2.4.3",
-    "build": "^0.1.4",
     "express": "^4.18.2",
     "hbs": "^4.2.0",
     "mongoose": "^7.0.3",
     "nodemon": "^2.0.22"
-  },
-  "description": ""
+  }
 }
