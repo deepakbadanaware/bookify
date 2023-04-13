@@ -3,7 +3,7 @@ const path=require('path');
 const app=express();
 const hbs=require('hbs');
 const bcryp=require('bcryptjs');
-
+const PORT=process.env.PORT ||3000;
 
 require('./db/conn');
 const Register=require("./models/registers");
@@ -88,4 +88,4 @@ const isMatch=await bcryp.compare(Password,useremail.Password);
 
 
 
-app.listen(3000);
+app.listen(PORT);
