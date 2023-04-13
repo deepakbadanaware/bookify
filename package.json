@@ -4,8 +4,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit1",
-    "dev": "nodemon src/app.js -e js,hbs",
- 
+   "build":"npm run dev",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
